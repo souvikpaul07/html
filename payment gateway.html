@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+</head>
+<body>
+    <form>
+        <h1>Payment Gateway</h1>
+        <fieldset>
+        <legend><h2>User Information</h2></legend>
+        <p>First Name* : <input type="text" name="text" required> </p>
+        <p>Middle Name : <input type="text" name="mname"></p>
+        <p>Last Name* : <input type="text" name="lname" required></p>
+        <fieldset>
+            <legend>Gender*</legend>
+        <P>Male <input type="radio" name="gender" id="male" required>Female <input type="radio" name="gender" id="female" required>
+           Others <input type="radio" name="gender" id="others" required> </p> 
+        </fieldset>
+        <fieldset>
+            <legend>caste</legend>
+            <p>General<input type="checkbox" name="caste" id="general"> Sc<input type="checkbox" name="caste" id="sc">St<input type="checkbox" name="caste" id="st">Obc<input type="checkbox" name="caste" id="obc">others<input type="checkbox" name="caste" id="others"></p>
+        </fieldset>
+        <p>ID type* : 
+            <select name="id type" id="id type" required>
+                <option value="">--select ID proof--</option>
+                <option value="Adhaar">Adhaar</option>
+                <option value="Pan">Pan</option>
+                <option value="voter">Voter</option>
+            </select>
+        </p>
+        <p>upload supportive ID proof* : <input type="file" required></p>
+        <p>Selected ID number* <input type="number" name="id_number" id="id_number" required></p>
+        <p>Address : <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+        <p>Email* : <input type="email" name="email" id="email" required></p>
+        <p>Pin code* : <input type="number" name="pincode" id="pincode" required></p>
+        </fieldset>
+
+        <fieldset>
+        <legend><h2>Payment Details</h2></legend>
+        <p>Card type*
+            <select name="card_type" id="card_type" required>
+                <option value="">--select card type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+        <p>Card Number* : <input type="number" name="card_number" id="card_number" required></p>
+        <p>Expiary date* : <input type="date" name="exp_date" id="exp_date" required></p>
+        <p>CVV* : <input type="password" name="cvv" id="cvv" required></p>
+        </fieldset>
+        <br>
+        <input type="submit" value="pay now">
+        <input type="reset" value="reset">
+        <!-- <input type="image" src="img/Harrier.jpg" alt="Submit" width="48" height="48"> -->
+    </form>
+</body>
+</html>
